@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/607760a62a.js" crossorigin="anonymous"></script>
+        <title>Ejercicio 3</title>
+    </head>
+    <body>
+        <script src="codigo.js"></script>
+        <div id="carrito">
+            <nav>
+                <!-- <h2>Carrito</h2> -->
+                <i class="fa-solid fa-cart-shopping"></i>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NOMBRE</th>
+                            <th>PRECIO</th>
+                        </tr>
+                    </thead>
+                    <div>
+                        <tbody id="componentes-carrito"></tbody>
+                    </div>
+                </table>
+            </nav>
+        </div>
+
+        <div class="container">
+            <h1>PC Componentes</h1>
+            <div class="grid" id="lista-componentes">
+                <div class="items" id="item1">
+                    <img src="img/ryzen.jpg" />
+                    <div class="info">
+                        <h2 id="titulo1">Procesador Ryzen</h2>
+                        <p>Ryzen 5 5600</p>
+                        <div class="precio">
+                            <p id="price1">$100</p>
+                        </div>
+                        <button id="1" onclick="aggCarrito(1)">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="items" id="item2">
+                    <img src="img/memoria.jpg" />
+                    <div class="info">
+                        <h2 id="titulo2">Memoria ram (2x8GB)</h2>
+                        <p>16GB (2x8GB) Hyperx RGB</p>
+                        <div class="precio">
+                            <p id="price2">$64</p>
+                        </div>
+                        <button id="2" onclick="aggCarrito(2)">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="items" id="item3">
+                    <img src="img/discoduro.jpg" />
+                    <div class="info">
+                        <h2 id="titulo3">Disco Duro 500GB (SSD)</h2>
+                        <p>SSD Samsung 512GB</p>
+                        <div class="precio">
+                            <p id="price3">$35</p>
+                        </div>
+                        <button id="3" onclick="aggCarrito(3)">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="items" id="item4">
+                    <img src="img/rtx.png" />
+                    <div class="info">
+                        <h2 id="titulo4">Tarjeta Grafica (RTX)</h2>
+                        <p>RTX 3080</p>
+                        <div class="precio">
+                            <p id="price4">$500</p>
+                        </div>
+                        <button id="4" onclick="aggCarrito(4)">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="items" id="item5">
+                    <img src="img/motherboard.jpg" />
+                    <div class="info">
+                        <h2 id="titulo5">Motherboard</h2>
+                        <p>Gigabyte B450M DS3H WIFI</p>
+                        <div class="precio">
+                            <p id="price5">$90</p>
+                        </div>
+                        <button id="5" onclick="aggCarrito(5)">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="items" id="item6">
+                    <img src="img/fuente.jpg" />
+                    <div class="info">
+                        <h2 id="titulo6">Fuente de poder (700w)</h2>
+                        <p>EVGA silver 700 watts</p>
+                        <div class="precio">
+                            <p id="price6">$72</p>
+                        </div>
+                        <button id="6" onclick="aggCarrito(6)">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
